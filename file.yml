@@ -1,0 +1,8 @@
+---
+- name: filecreation
+  hosts: all
+  tasks:
+   - name: test file creation
+     file:
+      path: "/opt/hollo-ram"
+      state: touch
